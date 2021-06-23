@@ -14,7 +14,7 @@
 get_header(); ?>
 
 
-    <div class="md:mx-40 mx-5 pt-16 grid grid-cols-12 gap-1">
+    <div class="md:mx-40 mx-5 pt-16 grid grid-cols-12 gap-5">
 <!--        <div class="md:pb-10 pb-5 col-span-2 ">-->
             <?php
             //start the repeater loop
@@ -24,9 +24,9 @@ get_header(); ?>
                 while (have_rows('repeater')) : the_row();
                     ?>
 
-                    <div class="md:col-span-3 col-span-12 mb-10">
-                        <img src="<?php the_sub_field('image');?>" alt="Icon">
-<!--                        <p><a href="--><?php //the_sub_field('image');?><!--" download><i class="fas fa-file-download"></i> Click To Download</a></p>-->
+                    <div class="md:col-span-4 col-span-12 mb-6 md:ml-24">
+                        <a href="<?php the_sub_field('link');?>"><img class="h-40" src="<?php the_sub_field('image');?>" alt="Icon"></a>
+                        <p><a href="<?php the_sub_field('image');?>" download><i class="fas fa-file-download"></i> Click To Download</a></p>
 
                 </div>
                 <?php
@@ -38,6 +38,7 @@ get_header(); ?>
             endif;
 
             ?>
+
         </div>
 
     </div>
@@ -45,5 +46,3 @@ get_header(); ?>
 
 
 
-<?php
-get_footer();
