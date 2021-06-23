@@ -24,8 +24,11 @@ get_header(); ?>
                 while (have_rows('repeater')) : the_row();
                     ?>
 
-                    <div class="md:col-span-4 col-span-12 mb-6 md:ml-24">
-                        <a href="<?php the_sub_field('link');?>"><img class="h-40" src="<?php the_sub_field('image');?>" alt="Icon"></a>
+                    <div class="md:col-span-4 col-span-12 mb-6 ">
+
+                        <a href="<?php the_sub_field('link');?>"><img class="md:pr-24 md:pl-24" src="<?php the_sub_field('image');?>" alt="Icon"></a>
+                        <p class="text-center"><?php the_sub_field('title');?></p>
+
 
 
                 </div>
