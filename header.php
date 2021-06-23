@@ -47,7 +47,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="leading-normal tracking-normal text-white bg-blue-light"
+<body class="leading-normal tracking-normal text-black"
       style="font-family: 'Source Sans Pro', sans-serif;" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
