@@ -1,0 +1,23 @@
+h1 {
+  font-size: 2em;
+  font-family: 'Ruda', sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.card-gradient-1 {
+  background: rgb(39,193,255);
+  background: linear-gradient(48deg, rgba(39,193,255,1) 0%, rgba(165,255,154,1) 100%);
+}
+
+.card-gradient-2 {
+  background: rgb(255,175,189);
+  background: linear-gradient(48deg, rgba(255,175,189,1) 0%, rgba(255,195,160,1) 100%);
+}
+
+.card-gradient-3 {
+  background: rgb(69,104,220);
+  background: linear-gradient(48deg, rgba(69,104,220,1) 0%, rgba(176,106,179,1) 100%);
+}
