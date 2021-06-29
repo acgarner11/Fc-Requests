@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <div class="text-center">
-<div class="grid grid-cols-12 mt-20 md:max-w-xl lg:max-w-2xl mx-auto">
+<div class="grid grid-cols-12 mt-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-8 w-60 md:w-auto lg:w-auto xl:w-auto">
     <?php
     //start the repeater loop
     if (have_rows('repeater')):
@@ -23,13 +23,14 @@ get_header(); ?>
         while (have_rows('repeater')) : the_row();
             ?>
 
-            <div class="col-span-12 md:col-span-6 lg:col-span-4  mx-10">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
                 <div>
                     <a href="<?php the_sub_field('link'); ?>">
-                        <img class=""
+                        <img class="pt-5"
                              src="<?php the_sub_field('image'); ?>"
                              alt="Icon"></a>
-                    <p class="text-center mb-10"><?php the_sub_field('title'); ?></p>
+                    <p class="text-center font-bold"> <?php the_sub_field('title'); ?></p>
+                    <p class="font-light"><?php the_sub_field('subtitle'); ?></p>
                 </div>
             </div>
 
