@@ -64,7 +64,7 @@
                     <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                        href="#">
 
-                        Foothills Church
+                        <p><?php the_field('pagetitle'); ?></p>
                     </a>
                 </div>
                 <div class="block lg:hidden pr-4">
