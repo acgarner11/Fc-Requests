@@ -54,7 +54,16 @@ get_header(); ?>
 </div>
 <div id = "mode" class="outer-light">
     <div class="title">
-        <input type="checkbox" id="switch" onclick="colorSwitch()" />
+        <!--     <h1>
+              <span class = "light-mode">Light Mode</span> /
+              <span class = "dark-mode">Dark Mode</span>
+            </h1> -->
+        <input type="checkbox" id="switch" onclick="function colorSwitch() {
+            const x = document.getElementById('mode');
+            x.classList.toggle('outer-light');
+            x.classList.toggle('outer-dark');
+        }
+        colorSwitch()" >
         <label for="switch">Toggle</label>
     </div>
 </div>

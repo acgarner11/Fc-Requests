@@ -53,4 +53,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 });
 
+// function colorSwitch() {
+// 	const x = document.getElementById('mode');
+// 	x.classList.toggle('outer-light');
+// 	x.classList.toggle('outer-dark');
+// }
 
