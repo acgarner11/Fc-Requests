@@ -1,0 +1,105 @@
+//.outer-light {
+//  background: rgb(242,242,242);
+//  background: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(167,167,167,1) 100%);
+//  position: relative;
+//  height: 100vh;
+
+  //.title, .toggle {
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate(-50%, -50%);
+  //  text-align: center;
+  //}
+
+  //.dark-mode {
+  //  opacity: 0.3;
+  //}
+//}
+
+
+
+//.outer-dark {
+//  background-color: black;
+//  background: linear-gradient(to top, #412b6c, #13123c, #02020e);
+//  position: relative;
+//  height: 100vh;
+
+  //.title, .toggle {
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate(-50%, -50%);
+  //  text-align: center;
+  //  color: white;
+  //}
+
+  //.light-mode {
+  //  opacity: 0.3;
+  //}
+
+  //.dark-mode {
+  //  text-shadow: 0 0 10px #fff,
+  //  0 0 20px #fff,
+  //  0 0 30px #412b6c,
+  //  0 0 40px #412b6c,
+  //  0 0 50px #412b6c,
+  //  0 0 60px #412b6c,
+  //  0 0 70px #412b6c;
+  //}
+//}
+
+
+
+// Notes to make sure I understand what is going on.
+
+// the intergal part of the checkbox hack, booting the checkbox off the page.
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+//this styles the label, text indent gets rid of the text, everything else is just styling the button.
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 100px;
+  height: 40px;
+  background: #00FFaa;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+// this creates the dot inside the toggle. still doesn't move it though.
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+  //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+// changes the background color when checked.
+//input:checked + label {
+//  background: #202020;
+//}
+
+// moves the toggle over to the other side when checked.
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background-color: #696969;
+}
+
+// makes the "jelly" enlongation effect
+label:active:after {
+  width: 130px;
+}

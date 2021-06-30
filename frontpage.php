@@ -33,8 +33,6 @@ get_header(); ?>
                     <p class="font-light"><?php the_sub_field('subtitle'); ?></p>
                 </div>
             </div>
-
-
         <?php
 
 
@@ -46,7 +44,19 @@ get_header(); ?>
     ?>
 
 
+
+
+
+
+
+
 </div>
+</div>
+<div id = "mode" class="outer-light">
+    <div class="title">
+        <input type="checkbox" id="switch" onclick="colorSwitch()" />
+        <label for="switch">Toggle</label>
+    </div>
 </div>
 
 
