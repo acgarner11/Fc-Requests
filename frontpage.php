@@ -27,7 +27,7 @@ get_header(); ?>
         <label for="switch">Toggle</label>
 
 <div class="text-center">
-<div class="grid grid-cols-12 mt-16 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
+<div class="grid grid-cols-12 mt-12 pb-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
     <?php
     //start the repeater loop
     if (have_rows('repeater')):
@@ -36,7 +36,7 @@ get_header(); ?>
         while (have_rows('repeater')) : the_row();
             ?>
 
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5 ">
+            <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
                 <div class="card hover:bg-gray">
                     <a href="<?php the_sub_field('link'); ?>">
                         <img class="pt-5"
