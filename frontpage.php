@@ -12,6 +12,10 @@
  */
 
 get_header(); ?>
+<div class="night-sky">
+
+    <div id="particles-js">
+
 <div id = "mode" class="outer-light">
     <div class="title">
         <!--     <h1>
@@ -67,6 +71,7 @@ get_header(); ?>
 </div>
 </div>
 </div>
+    </div>
 
 
 
