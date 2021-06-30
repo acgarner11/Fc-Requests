@@ -58,4 +58,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
 // 	x.classList.toggle('outer-light');
 // 	x.classList.toggle('outer-dark');
 // }
-

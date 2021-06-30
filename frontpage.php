@@ -12,6 +12,19 @@
  */
 
 get_header(); ?>
+<div id = "mode" class="outer-light">
+    <div class="title">
+        <!--     <h1>
+              <span class = "light-mode">Light Mode</span> /
+              <span class = "dark-mode">Dark Mode</span>
+            </h1> -->
+        <input type="checkbox" id="switch" onclick="function colorSwitch() {
+            const x = document.getElementById('mode');
+            x.classList.toggle('outer-light');
+            x.classList.toggle('outer-dark');
+        }
+        colorSwitch()" >
+        <label for="switch">Toggle</label>
 
 <div class="text-center">
 <div class="grid grid-cols-12 mt-16 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
@@ -52,21 +65,9 @@ get_header(); ?>
 
 </div>
 </div>
-<div id = "mode" class="outer-light">
-    <div class="title">
-        <!--     <h1>
-              <span class = "light-mode">Light Mode</span> /
-              <span class = "dark-mode">Dark Mode</span>
-            </h1> -->
-        <input type="checkbox" id="switch" onclick="function colorSwitch() {
-            const x = document.getElementById('mode');
-            x.classList.toggle('outer-light');
-            x.classList.toggle('outer-dark');
-        }
-        colorSwitch()" >
-        <label for="switch">Toggle</label>
-    </div>
 </div>
+</div>
+
 
 
 <?php

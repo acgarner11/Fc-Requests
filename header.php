@@ -87,12 +87,7 @@
                     >
                         Action
                     </button>
-<!--                    <div id = "mode" class="outer-light">-->
-<!--                        <div class="title">-->
-<!--                            <input type="checkbox" id="switch" onclick="colorSwitch()" />-->
-<!--                            <label for="switch">Toggle</label>-->
-<!--                        </div>-->
-<!--                    </div>-->
+
                 </div>
             </div>
         </nav>

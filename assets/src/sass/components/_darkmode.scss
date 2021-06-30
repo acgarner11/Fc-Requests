@@ -24,7 +24,7 @@
   background-color: black;
   background: linear-gradient(to top, #412b6c, #13123c, #02020e);
   position: relative;
-  // height: 100vh;
+  height: 100vh;
 
   // .title, .toggle {
   //   position: absolute;
@@ -70,7 +70,8 @@ label {
   background: #00FFaa;
   display: block;
   border-radius: 100px;
-  position: relative;
+  position: absolute;
+  top:80px;
   // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
