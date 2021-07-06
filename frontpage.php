@@ -19,14 +19,18 @@
                   <span class = "light-mode">Light Mode</span> /
                   <span class = "dark-mode">Dark Mode</span>
                 </h1> -->
+
             <input type="checkbox" id="switch" onclick="function colorSwitch() {
                 const x = document.getElementById('mode');
                 x.classList.toggle('outer-light');
                 x.classList.toggle('outer-dark');
             }
             colorSwitch()">
-            <label for="switch">Toggle</label>
 
+                <label class="fixedButton" for="switch">
+                    <i class="moon fas fa-moon"></i>
+                    <i class="sun fas fa-sun"></i>
+                </label>
             <div class="text-center middle">
                 <div class="grid grid-cols-12 mt-12 pb-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
 
@@ -58,7 +62,6 @@
                     endif;
 
                     ?>
-
 
                 </div>
             </div>
