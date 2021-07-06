@@ -36,7 +36,7 @@ get_header(); ?>
                     //Begin looping data
                     while (have_rows('repeater')) : the_row();
                         ?>
-                        <!--Dynamicly generated linked images-->
+                        <!--Dynamically generated linked images-->
                         <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
                             <div class="card hover:bg-gray hover-text">
                                 <a href="<?php the_sub_field('link'); ?>">
