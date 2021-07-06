@@ -1,82 +1,75 @@
-<?php
-/**
- * Template Name: Front Page
- *
- * The Frontpage of the Wordpack Theme
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Wordpack Theme
- * @since 1.0.0
- */
-
-get_header(); ?>
-<div class="night-sky">
-
-    <div id="particles-js">
-
-<div id = "mode" class="outer-light">
-    <div class="title">
-        <!--     <h1>
-              <span class = "light-mode">Light Mode</span> /
-              <span class = "dark-mode">Dark Mode</span>
-            </h1> -->
-        <input type="checkbox" id="switch" onclick="function colorSwitch() {
-            const x = document.getElementById('mode');
-            x.classList.toggle('outer-light');
-            x.classList.toggle('outer-dark');
-        }
-        colorSwitch()" >
-        <label for="switch">Toggle</label>
-
-<div class="text-center">
-<div class="grid grid-cols-12 mt-12 pb-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
     <?php
-    //start the repeater loop
-    if (have_rows('repeater')):
-        //Card start
-        //Begin looping data
-        while (have_rows('repeater')) : the_row();
-            ?>
+    /**
+     * Template Name: Front Page
+     *
+     * The Frontpage of the Wordpack Theme
+     *
+     * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+     *
+     * @package WordPress
+     * @subpackage Wordpack Theme
+     * @since 1.0.0
+     */
 
-            <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
-                <div class="card hover:bg-gray">
-                    <a href="<?php the_sub_field('link'); ?>">
-                        <img class="pt-5"
-                             src="<?php the_sub_field('image'); ?>"
-                             alt="Icon"></a>
-                    <p class="text-center font-bold"> <?php the_sub_field('title'); ?></p>
-                    <p class="font-light"><?php the_sub_field('subtitle'); ?></p>
+    get_header(); ?>
+    <div id="mode" class="outer-light">
+<!--            <div id="particles-js">-->
+        <div class="title">
+            <!--     <h1>
+                  <span class = "light-mode">Light Mode</span> /
+                  <span class = "dark-mode">Dark Mode</span>
+                </h1> -->
+            <input type="checkbox" id="switch" onclick="function colorSwitch() {
+                const x = document.getElementById('mode');
+                x.classList.toggle('outer-light');
+                x.classList.toggle('outer-dark');
+            }
+            colorSwitch()">
+            <label for="switch">Toggle</label>
+
+            <div class="text-center middle">
+                <div class="grid grid-cols-12 mt-12 pb-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
+
+                    <?php
+                    //start the repeater loop
+                    if (have_rows('repeater')):
+                        //Card start
+                        //Begin looping data
+                        while (have_rows('repeater')) : the_row();
+                            ?>
+
+                            <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
+                                <div class="card hover:bg-gray">
+                                    <a href="<?php the_sub_field('link'); ?>">
+                                        <img class="pt-5"
+                                             src="<?php the_sub_field('image'); ?>"
+                                             alt="Icon"></a>
+                                    <p class="text-center font-bold"> <?php the_sub_field('title'); ?></p>
+                                    <p class="font-light"><?php the_sub_field('subtitle'); ?></p>
+                                </div>
+                            </div>
+
+                        <?php
+
+
+                        endwhile;
+                    else:
+                        //no rows found
+                    endif;
+
+                    ?>
+
+
                 </div>
             </div>
-        <?php
-
-
-        endwhile;
-    else:
-        //no rows found
-    endif;
-
-    ?>
-
-
-
-
-
-
-
-
-</div>
-</div>
-</div>
-</div>
+        </div>
     </div>
 
+    <!--</div>-->
 
 
-<?php
-//get_footer();
-?>
+    <?php
+    //get_footer();
+    ?>
 
 

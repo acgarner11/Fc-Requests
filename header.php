@@ -58,7 +58,8 @@
         </div>
 
 
-        <nav id="header" class="fixed w-full z-30 top-0 bg-white">
+
+        <nav id="header " class="fixed w-full z-30 top-0 bg-white">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <div class="pl-4 flex items-center">
                     <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
@@ -87,6 +88,7 @@
                     >
                         Action
                     </button>
+
 
                 </div>
             </div>
