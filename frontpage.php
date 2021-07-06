@@ -39,7 +39,7 @@
                             ?>
 
                             <div class="col-span-12 md:col-span-6 lg:col-span-4 lg:h-48 mx-5">
-                                <div class="card hover:bg-gray">
+                                <div class="card hover:bg-gray hover-text">
                                     <a href="<?php the_sub_field('link'); ?>">
                                         <img class="pt-5"
                                              src="<?php the_sub_field('image'); ?>"
