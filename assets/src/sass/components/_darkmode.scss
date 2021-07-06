@@ -1,157 +1,70 @@
-.outer-light{
-  //background: rgb(0, 0, 0);
-  //background-repeat:no-repeat;
-  //background-size:cover;
-  //position: relative;
-  //height: 10vh;
-
-
-  //   .title, .toggle {
-  //     // position: absolute;
-  //     // top: 50%;
-  //     // left: 50%;
-  //     // transform: translate(-50%, -50%);
-  //     // text-align: center;
-  //   }
-
-  //  .dark-mode {
-  //    opacity: 0.3;
-  //  }
+//Light mode//
+.outer-light {
   .hover-text:hover {
-
-    :hover{
-      opacity:0.8;}
+    :hover {
+      opacity: 0.8;
+    }
   }
-  i{
+
+  i {
     position: absolute;
     bottom: 20px;
     right: 20px;
     font-size: 2em;
-    color:#EBC815;
+    color: #EBC815;
   }
-  .sun{
+
+  .sun {
     visibility: hidden;
   }
 }
-
+//Dark mode//
 .outer-dark {
-  //background-color: black;
   background: linear-gradient(to top, #412b6c, #13123c, #02020e);
-  //position: relative;
-  //background-repeat:no-repeat;
-  //background-size:cover;
-
 
   .title, .toggle {
-    //position: absolute;
-    //top: 50%;
-    //left: 50%;
-    //transform: translate(-50%, -50%);
-    //text-align: center;
     color: white;
 
     .hover-text:hover {
-      color:black;
-      //background-color:white;
+      color: black;
 
-      background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.85);
       box-shadow: 0 0 60px #fefefe,
-        0 0 60px #fefefe;
+      0 0 60px #fefefe;
     }
-    i{
+
+    i {
       position: absolute;
       bottom: 20px;
       right: 20px;
       font-size: 2em;
-      color:#EBC815;
+      color: #EBC815;
     }
-    .moon{
+
+    .moon {
       visibility: hidden;
     }
   }
-
-  //.light-mode {
-  //  opacity: 0.3;
-  //}
-  //
-  //.dark-mode {
-  //  text-shadow: 0 0 10px #fff,
-  //    0 0 20px #fff,
-  //    0 0 30px #412b6c,
-  //    0 0 40px #412b6c,
-  //    0 0 50px #412b6c,
-  //    0 0 60px #412b6c,
-  //    0 0 70px #412b6c;
-  //}
-}
-
-
-
-// Notes to make sure I understand what is going on.
-
-// the intergal part of the checkbox hack, booting the checkbox off the page.
-input[type="checkbox"] {
-  height: 0;
-  width: 0;
-
 }
 
 //this styles the label, text indent gets rid of the text, everything else is just styling the button.
 label {
   cursor: pointer;
-  position:fixed;
+  position: fixed;
   width: 70px;
   height: 70px;
   background: #313131;
   display: block;
   border-radius: 100px;
-  //top:80px;
-  //left:15px;
   bottom: 20px;
   right: 15px;
-  //box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
-}
-//.bgbutton{
-//  position:fixed;
-//  bottom: 40px;
-//  right: 35px;
-//  background-color: #afafaf;
-//  width: 90px;
-//  height: 50px;
-//  border-radius: 100px;
-//}
 
-// this creates the dot inside the toggle. still doesn't move it though.
-//label:after {
-//  content: "";
-//  position:absolute;
-//  top: 3px;
-//  left: 3px;
-//  width: 30px;
-//  height: 30px;
-//  background: #b63434;
-//  border-radius: 90px;
-//  transition: 0.3s;
-  //box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-//}
+}
 
 // changes the background color when checked.
 input:checked + label {
   background: #eeeeee;
-  //box-shadow: 0 3px 16px rgb(224, 224, 224), 0 3px 6px rgb(212, 212, 212);
-
 }
 
-// moves the toggle over to the other side when checked.
-//input:checked + label:after {
-//  left: calc(100% - 5px);
-//  transform: translateX(-100%);
-//  background-color: #eaeaea;
-//}
-//
-//// makes the "jelly" enlongation effect
-//label:active:after {
-//  width: 40px;
-//}
 
 
