@@ -6,7 +6,7 @@ import '../sass/frontend.scss';
 /**
  * JavaScript
  */
-import '../js/particles.js';
+
 /**
  * Add here your JavasScript code
  */
