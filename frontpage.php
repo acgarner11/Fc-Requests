@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-<div id="mode" class="outer-light">
+<!--<div id="mode" class="outer-light">-->
     <div class="title">
         <!--Dark mode button-->
         <input type="checkbox" id="switch" onclick="function colorSwitch() {
@@ -21,13 +21,13 @@ get_header(); ?>
                 x.classList.toggle('outer-dark');
             }
             colorSwitch()">
-        <label class="fixedButton" for="switch">
-            <i class="moon fas fa-moon"></i>
-            <i class="sun fas fa-sun"></i>
-        </label>
+<!--        <label class="fixedButton" for="switch">-->
+<!--            <i class="moon fas fa-moon"></i>-->
+<!--            <i class="sun fas fa-sun"></i>-->
+<!--        </label>-->
         <!--Start main content-->
         <div class="text-center middle">
-            <div class="grid grid-cols-12 mt-12 pb-20 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
+            <div class="grid grid-cols-12  pb-24 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
 
                 <?php
                 //start the repeater loop
