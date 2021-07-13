@@ -32,7 +32,13 @@
                href="#">
                 <p class="title"><?php the_field('pagetitle'); ?></p>
             </a>
-            <!--Icons for dark mode button -->
+            <!--Dark mode button-->
+            <input type="checkbox" id="switch" onclick="function colorSwitch() {
+                const x = document.getElementById('mode');
+                x.classList.toggle('outer-light');
+                x.classList.toggle('outer-dark');
+            }
+            colorSwitch()">
             <label class="fixedButton" for="switch">
                 <i class="moon fas fa-moon"></i>
                 <i class="sun fas fa-sun"></i>

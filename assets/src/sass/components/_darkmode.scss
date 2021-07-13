@@ -5,6 +5,7 @@
       opacity: 0.8;
     }
   }
+
   i {
     position: absolute;
     bottom: 20px;
@@ -31,7 +32,7 @@
 
       background: rgba(255, 255, 255, 0.85);
       box-shadow: 0 0 60px #fefefe,
-        0 0 60px #fefefe;
+      0 0 60px #fefefe;
     }
   }
 
@@ -60,16 +61,13 @@ label {
   border-radius: 100px;
   bottom: 20px;
   right: 15px;
-
-
 }
 
 // changes the background color when checked.
 input:checked + label {
-  background: #eeeeee;
+  background: #e7e7e7;
 }
-input#switch{
-  display:none;
+input#switch {
+  display: none;
 }
-
 

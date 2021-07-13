@@ -13,13 +13,6 @@
 
 get_header(); ?>
     <div class="title">
-        <!--Dark mode button-->
-        <input type="checkbox" id="switch" onclick="function colorSwitch() {
-                const x = document.getElementById('mode');
-                x.classList.toggle('outer-light');
-                x.classList.toggle('outer-dark');
-            }
-            colorSwitch()">
         <!--Start main content-->
         <div class="text-center middle">
             <div class="grid grid-cols-12  pb-24 md:max-w-xl lg:max-w-2xl mx-auto md:gap-7 md:gap-y-9 w-60 md:w-auto lg:w-auto xl:w-auto">
